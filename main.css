@@ -132,6 +132,7 @@ img {
 
 .contacts__schedule-line {
   margin: 0;
+  white-space: nowrap;
 }
 
 .contacts__schedule-line--highlighted {
@@ -250,16 +251,27 @@ img {
 }
 
 .tariffs__item {
+  display: flex;
   flex-grow: 0;
   flex-basis: 250px;
-  border: 1px solid transparent;
   border-radius: 3px;
-  padding: 37px 25px 20px;
   text-align: center;
   margin-right: 25px;
 }
 
-.tariffs__item::before {
+.tariffs__item-link {
+  flex-grow: 1;
+  border: 1px solid transparent;
+  padding: 37px 25px 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tariffs__item-link:hover {
+  border-color: #e8e9ed;
+} 
+
+.tariffs__item-link::before {
   content: '';
   display: inline-block;
   width: 70px;
@@ -271,20 +283,16 @@ img {
   background-position: center;
 }
 
-.tariffs__item--standart::before {
+.tariffs__item--standart .tariffs__item-link::before {
   background-image: url('./img/icons/content/flower.png');
 }
 
-.tariffs__item--premium::before {
+.tariffs__item--premium .tariffs__item-link::before {
   background-image: url('./img/icons/content/star.png');
 }
 
-.tariffs__item--luxury::before {
+.tariffs__item--luxury .tariffs__item-link::before {
   background-image: url('./img/icons/content/painter-palette.png');
-}
-
-.tariffs__item--highlighted {
-  border-color: #e8e9ed;
 }
 
 .tariffs__item-title {
@@ -490,11 +498,11 @@ img {
 }
 
 .footer .logo {
-  margin-right: 83px;
+  margin-right: 103px;
 }
 
 .creator {
-  max-width: 240px;
+  max-width: 260px;
   margin: 0 20px 0 0;
   font-size: 14px;
   line-height: 1.4;
@@ -521,16 +529,39 @@ img {
 }
 
 .socilas__link {
-  min-width: 20px;
-  min-height: 20px;
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   background-color:  #d2def3;
   transition: background-color .3s;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
 }
 
 .socilas__link:hover {
   background-color: #fff;
 } 
+
+.socilas__link--vk {
+  background-image: url('./img/icons/socials/vk.png');
+}
+
+.socilas__link--fb {
+  background-image: url('./img/icons/socials/fb.png');
+}
+
+.socilas__link--google {
+  background-image: url('./img/icons/socials/google.png');
+}
+
+.socilas__link--twitter {
+  background-image: url('./img/icons/socials/twitter.png');
+}
+
+.socilas__link--mail {
+  background-image: url('./img/icons/socials/mail.png');
+}
