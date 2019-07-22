@@ -1,0 +1,55 @@
+
+.menu__list {
+    margin: 0 0 30px;
+    list-style-type: none;
+}
+
+.menu__item {
+    margin-bottom: 19px;
+}
+
+.menu__link {
+    display: inline-block;
+    padding: 1px 0 0 35px;
+    color: #4b73b5;  
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: color .3s, background .3s;
+}
+
+.menu__link:not(:link), 
+.menu__link:hover {
+    color: #221f1f;
+}
+
+.menu__link--main {
+    background-image: url('../img/icons/menu/main.png');
+}
+
+.menu__link--main:not(:link),  
+.menu__link--main:hover {
+    background-image: url('../img/icons/menu/main-hover.png');
+}
+
+.menu__link--reviews {
+    background-image: url('../img/icons/menu/feed.png');
+}
+
+.menu__link--reviews:not(:link),  
+.menu__link--reviews:hover {
+    background-image: url('../img/icons/menu/feed-hover.png');
+}
+
+.menu__link--crew {
+    background-image: url('../img/icons/menu/team.png');
+}
+
+.menu__link--crew:not(:link),  
+.menu__link--crew:hover {
+    background-image: url('../img/icons/menu/team-hover.png');
+}

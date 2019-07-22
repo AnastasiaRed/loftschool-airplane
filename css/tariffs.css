@@ -1,0 +1,95 @@
+.tariffs {
+    margin-bottom: 40px;
+}
+
+.tariffs__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0; 
+}
+
+.tariffs__item {
+    display: flex;
+    flex-grow: 0;
+    flex-basis: 250px;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.tariffs__item-link {
+    flex-grow: 1;
+    border: 1px solid transparent;
+    padding: 37px 25px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.tariffs__item-link:hover {
+    border-color: #e8e9ed;
+} 
+
+.tariffs__item-link::before {
+    content: '';
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    border-radius: 35px;
+    background-color: #4b73b5;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariffs__item--standart .tariffs__item-link::before {
+    background-image: url('../img/icons/content/flower.png');
+}
+
+.tariffs__item--premium .tariffs__item-link::before {
+    background-image: url('../img/icons/content/star.png');
+}
+
+.tariffs__item--luxury .tariffs__item-link::before {
+    background-image: url('../img/icons/content/painter-palette.png');
+}
+
+.tariffs__item-title {
+    margin: 0 0 17px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tariffs__item-desc {
+    margin: 0px 0 7px;
+}
+
+.tariffs__item-includes {
+    margin: 0;
+    text-align: left;
+    list-style-type: none;
+}
+
+.tariffs__item-includes > li {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 25px;
+}
+
+.tariffs__item-includes > li::before {
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    content: '\25CF';
+    font-size: 10px;
+}
+
+.tariffs__item-price {
+    margin: 0;
+    font-size: 54px;
+}
+
+.tariffs__item-price > small {
+    font-size: 30px;
+}

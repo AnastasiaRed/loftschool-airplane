@@ -1,0 +1,17 @@
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-style: italic;
+    list-style-type: none;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+    content: ' / ';
+    padding-right: 3px;
+}
+
+.breadcrumnbs__link:link {
+    color: #4b73b5;
+}

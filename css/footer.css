@@ -1,0 +1,24 @@
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background: #4b73b5;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .logo {
+    margin-right: 103px;
+}

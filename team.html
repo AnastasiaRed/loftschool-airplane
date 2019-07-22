@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AirPlanet</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                                 <a href="./index.html" class="menu__link menu__link--main">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="./comments.html" class="menu__link menu__link--news">Отзывы</a>
+                                <a href="./comments.html" class="menu__link menu__link--reviews">Отзывы</a>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link menu__link--crew">Экипаж</a>
@@ -67,9 +67,14 @@
                         <ul class="team__list">
                             <li class="team__item">
                                 <a href="#" class="team__item-link">
-                                    <picture class="team__item-media">
-                                        <img src="" alt="">
-                                    </picture>
+                                    <div class="team__item-media-wrap">
+                                        <picture class="team__item-media">
+                                            <img src="./img/content/team/Alex.jpg" alt="Улыбающийся мужчина в форме">
+                                        </picture>
+                                        <p class="team__item-media-overflow">
+                                            Алексей
+                                        </p>
+                                    </div>
                                     <h3 class="team__item-title">Белов Алексей Вадимович</h3>
                                     <p class="team__item-position">Главный пилот</p>
                                     <p class="team__item-description">
@@ -78,39 +83,133 @@
                                     </p>
                                 </a>
                             </li>
+                            <li class="team__item">
+                                <a href="#" class="team__item-link">
+                                    <div class="team__item-media-wrap">
+                                        <picture class="team__item-media">
+                                            <img src="./img/content/team/Inna.jpg" alt="Милая девушка стюардесса">
+                                        </picture>
+                                        <p class="team__item-media-overflow">
+                                            Инна
+                                        </p>
+                                    </div>
+                                    <h3 class="team__item-title">Сухарина Инна Николаевна</h3>
+                                    <p class="team__item-position">Бортпроводник</p>
+                                    <p class="team__item-description">
+                                        Благодаря деятельности этого человека, на борту самолета клиенты чувствуют себя, как дома. 
+                                        Инна Николаевна чутко относится ко всем требованиям клиентов, 
+                                        очень любит детей и всячески помогает сделать полет комфортным и приятным.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="team__item">
+                                <a href="#" class="team__item-link">
+                                    <div class="team__item-media-wrap">
+                                        <picture class="team__item-media">
+                                            <img src="./img/content/team/Boris.jpg" alt="Взрослый серьезный мужчина">
+                                        </picture>
+                                        <p class="team__item-media-overflow">
+                                            Борис
+                                        </p>
+                                    </div>                  
+                                    <h3 class="team__item-title">Лещ Борис Анатольевич</h3>
+                                    <p class="team__item-position">Авиатехник</p>
+                                    <p class="team__item-description">
+                                        Человек с золотыми руками, инженер и конструктор от Бога! 
+                                        Борис Анатольевич работает уже более 50 лет и на своем веку видел, 
+                                        как из старых моделей самолетов появлялись настоящие авиа шедевры.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="team__item">
+                                <a href="#" class="team__item-link">
+                                    <div class="team__item-media-wrap">
+                                        <picture class="team__item-media">
+                                            <img src="./img/content/team/Elina.jpg" alt="Улыбающаяся девушка в наушниках">
+                                        </picture>
+                                        <p class="team__item-media-overflow">
+                                            Элина
+                                        </p>
+                                    </div>                  
+                                    <h3 class="team__item-title">Дигангидзе Элина Даниловна</h3>
+                                    <p class="team__item-position">Диспетчер</p>
+                                    <p class="team__item-description">
+                                        Ей присущ внимательный подход к расчетам, а отменная память удивляет даже самых опытных членов экипажа. 
+                                        За 22 года работы она стажировала более 100 диспетчеров для работы в крупнейших аэропортах страны.  
+                                        Знает в совершенстве 5 иностранных языков.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="team__item">
+                                <a href="#" class="team__item-link">
+                                    <div class="team__item-media-wrap">
+                                        <picture class="team__item-media">
+                                            <img src="./img/content/team/Elena.jpg" alt="Улыбающаяся девушка">
+                                        </picture>
+                                        <p class="team__item-media-overflow">
+                                            Елена
+                                        </p>
+                                    </div>                  
+                                    <h3 class="team__item-title">Следь Елена Николаевна</h3>
+                                    <p class="team__item-position">Старший бортпроводник</p>
+                                    <p class="team__item-description">
+                                        Вежливая улыбка, внимательность к деталям и большой опыт работы – это лишь малая часть достоинств Елены Николаевны. 
+                                        Старший бортпроводник задает тон всей поездке, поэтому клиенты, которые летят с ней, заряжаются отличным настроением и гармонией.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="team__item">
+                                <a href="#" class="team__item-link">
+                                    <div class="team__item-media-wrap">
+                                        <picture class="team__item-media">
+                                            <img src="./img/content/team/Yrii.jpg" alt="Улыбающийся мужчина в форме и очках">
+                                        </picture>
+                                        <p class="team__item-media-overflow">
+                                            Юрий
+                                        </p>
+                                    </div>                  
+                                    <h3 class="team__item-title">Нестеренко Юрий Афанасьевич</h3>
+                                    <p class="team__item-position">Второй пилот</p>
+                                    <p class="team__item-description">
+                                        Правая рука главного пилота, опытный и отважный помощник. 
+                                        О своей работе в шутку говорит так «Наше дело правое, не мешать левому». 
+                                        Опыт работы составляет 18 лет, внимательно относится ко всем деталям и считает свою работу – делом жизни. 
+                                    </p>
+                                </a>
+                            </li>
                         </ul>
                     </section>
                     <section class="partners">
                         <h2 class="section-title">Партнёры</h2>
                         <ul class="partners__list">
-                            <li class="partnes__item">
+                            <li class="partners__item">
                                 <a href="#" class="partners__link">
-                                    <img src="" alt="./img/content/partners/bmp-company.png" class="partners__item-img" />
+                                    <img alt="BMP Company" src="./img/content/partners/bmp-company.png" class="partners__item-img" />
                                 </a>
                             </li>
-                            <li class="partnes__item">
+                            <li class="partners__item">
                                 <a href="#" class="partners__link">
-                                    <img src="" alt="./img/content/partners/tetra-install.png" class="partners__item-img" />
+                                    <img alt="Tetra Install Company" src="./img/content/partners/tetra-install.png" class="partners__item-img" />
                                 </a>
                             </li>
-                            <li class="partnes__item">
+                            <li class="partners__item">
                                 <a href="#" class="partners__link">
-                                    <img src="" alt="./img/content/partners/syberian-airlines.png" class="partners__item-img" />
+                                    <img alt="Syberian Airlines Company" src="./img/content/partners/syberian-airlines.png" class="partners__item-img" />
                                 </a>
                             </li>
-                            <li class="partnes__item">
+                            <li class="partners__item">
                                 <a href="#" class="partners__link">
-                                    <img src="" alt="./img/content/partners/onair.png" class="partners__item-img" />
+                                    <img alt="Onair Company" src="./img/content/partners/onair.png" class="partners__item-img" />
                                 </a>
                             </li>
-                            <li class="partnes__item">
+                            <li class="partners__item">
                                 <a href="#" class="partners__link">
-                                    <img src="" alt="./img/content/partners/bingair.png" class="partners__item-img" />
+                                    <img alt="Bingair Company" src="./img/content/partners/bingair.png" class="partners__item-img" />
                                 </a>
                             </li>
-                            <li class="partnes__item">
+                            <li class="partners__item">
                                 <a href="#" class="partners__link">
-                                    <img src="" alt="./img/content/partners/ural.png" class="partners__item-img" />
+                                    <img alt="Ural Company" src="./img/content/partners/ural.png" class="partners__item-img" />
                                 </a>
                             </li>
                         </ul>

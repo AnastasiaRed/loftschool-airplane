@@ -1,0 +1,17 @@
+
+.banner {    
+    margin-top: -27px;
+    margin-bottom: -5px;
+}
+
+.banner__media {
+    position: relative;
+    display: block;
+    min-height: 300px;
+}
+
+.banner__media > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
