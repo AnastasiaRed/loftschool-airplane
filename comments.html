@@ -16,7 +16,7 @@
         <!-- header -->
         <header class="header">
             <div class="container">
-                <a href="./index.html" class="logo">
+                <a href="./main.html" class="logo">
                     <img src="./img/logo/logo.png" class="logo__img" alt="AirPlanet" />
                 </a>
 
@@ -37,10 +37,40 @@
         <main class="main">
             <div class="container">
                 <aside class="sidebar">
+
+                    <div class="breaker">
+                        Вопросы по бронированию билетов в нашей авиакомпании принимаются. 
+                        Для этого можно оставить <a href="#"><b>заявку на сайте</b></a> 
+                        или же позвонить по номеру круглосуточной поддержки <a href="tel:8 (800) 00-392-10"><b>8&nbsp;(800) 00-392-10</b></a>.
+                    </div>
+
+                    <div class="socials">
+                        <h2 class="socials__title">Наши социальные сети</h2>
+                        <ul class="socials__list">
+                            <li class="socials__item">
+                                <a href="#" class="socilas__link socilas__link--vk">вКонтакте</a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socilas__link socilas__link--fb">Facebook</a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socilas__link socilas__link--google">Google</a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socilas__link socilas__link--twitter">Twitter</a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socilas__link socilas__link--mail">eMail</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="page">
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="./index.html" class="menu__link menu__link--main">Главная</a>
+                                <a href="./main.html" class="menu__link menu__link--main">Главная</a>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link menu__link--reviews">Отзывы</a>
@@ -50,17 +80,6 @@
                             </li>
                         </ul>
                     </nav>
-                </aside>
-
-                <div class="page">
-                    <ul class="breadcrumbs">
-                        <li class="breadcrumbs__item">
-                            <a href="./index.html" class="breadcrumnbs__link">Главная</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumnbs__link">Отзывы</a>
-                        </li>
-                    </ul>
 
                     <section class="reviews">
                         <h2 class="section-title">Отзывы</h2>
@@ -158,48 +177,40 @@
                             </ul>
                         </div>
                     </section>
+                    
+                    <form class="form" action="#" method="POST">
+                        <h2 class="section-title">Оставить отзыв</h2>
+                        <div class="form__row form__group">
+                            <div class="form__column">
+                                <label class="form__label" for="username">Ваше имя</label>
+                                <input id="username" class="form__control" type="text" name="username" placeholder="Андрей">
+                            </div>
+                            <div class="form__column">
+                                <label for="userlink" class="form__label">Ссылка на профиль VK</label>
+                                <input id="userlink" class="form__control" type="url" name="userlink" placeholder="vk.com/example">
+                            </div>
+                        </div>     
+                        <div class="form__group">
+                            <label for="comment" class="form__label">Текст отзыва</label>
+                            <textarea id="comment" name="comment" class="form__control">Мне понравилось</textarea>
+                        </div>    
+                        <div class="form__row">
+                            <div class="form__column">
+                                <fieldset class="form__fildset">
+                                    <legend class="form__legend">Отображать фото в отзые?</legend>
+                                    <input id="photoYes" class="form__radio" type="radio" name="allowPhoto" value="yes" checked>
+                                    <label class="form__label form__label--radio" for="photoYes">Да</label>
+                                    <input id="photoNo" class="form__radio" type="radio" name="allowPhoto" value="no">
+                                    <label class="form__label form__label--radio" for="photoNo">Нет</label>
+                                </fieldset>
+                            </div>
+                            <div class="form__column form__column--right">
+                                <button class="form__submit" type="sumit">Отправить</button>
+                            </div>
+                        </div>                       
+                    </form>
                 </div>
             </div>
-            <div class="breaker">
-                <div class="container">
-                    Вопросы по бронированию билетов в нашей авиакомпании принимаются. 
-                    Для этого можно оставить <a href="#"><b>заявку на сайте</b></a> 
-                    или же позвонить по номеру круглосуточной поддержки <b>8 (800) 00-392-10</b>.
-                </div>
-            </div>
-            <section class="container">
-                <form class="form" action="#" method="POST">
-                    <h2 class="section-title">Оставить отзыв</h2>
-                    <div class="form__row form__group">
-                        <div class="form__column">
-                            <label class="form__label" for="username">Ваше имя</label>
-                            <input id="username" class="form__control" type="text" name="username" placeholder="Андрей">
-                        </div>
-                        <div class="form__column">
-                            <label for="userlink" class="form__label">Ссылка на профиль VK</label>
-                            <input id="userlink" class="form__control" type="url" name="userlink" placeholder="vk.com/example">
-                        </div>
-                    </div>     
-                    <div class="form__group">
-                        <label for="comment" class="form__label">Текст отзыва</label>
-                        <textarea id="comment" name="comment" class="form__control">Мне понравилось</textarea>
-                    </div>    
-                    <div class="form__row">
-                        <div class="form__column">
-                            <fieldset class="form__fildset">
-                                <legend class="form__legend">Отображать фото в отзые?</legend>
-                                <input id="photoYes" class="form__radio" type="radio" name="allowPhoto" value="yes">
-                                <label class="form__label form__label--radio" for="photoYes">Да</label>
-                                <input id="photoNo" class="form__radio" type="radio" name="allowPhoto" value="no">
-                                <label class="form__label form__label--radio" for="photoNo">Нет</label>
-                            </fieldset>
-                        </div>
-                        <div class="form__column form__column--right">
-                            <button class="form__submit" type="sumit">Отправить</button>
-                        </div>
-                    </div>                       
-                </form>
-            </section>
         </main>
         <footer class="footer">
             <div class="container">
@@ -210,30 +221,9 @@
                     Автор работы: <b>Прохладов Вадим</b>
                 </p>
 
-                <a href="./index.html" class="logo">
+                <a href="./main.html" class="logo">
                     <img src="./img/logo/logo.png" class="logo__img" alt="AirPlanet" />
-                </a>
-                
-                <div class="socials">
-                    <h2 class="socials__title">Наши социальные сети</h2>
-                    <ul class="socials__list">
-                        <li class="socials__item">
-                            <a href="#" class="socilas__link socilas__link--vk">вКонтакте</a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socilas__link socilas__link--fb">Facebook</a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socilas__link socilas__link--google">Google</a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socilas__link socilas__link--twitter">Twitter</a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socilas__link socilas__link--mail">eMail</a>
-                        </li>
-                    </ul>
-                </div>
+                </a>                
             </div>
         </footer>
     </div>

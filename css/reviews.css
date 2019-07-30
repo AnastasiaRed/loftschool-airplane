@@ -1,17 +1,26 @@
 .reviews {
+    margin-top: -9px;
     margin-bottom: 45px;
 }
 
 .reviews__list {
-    margin: -15px 0 13px;
+    margin: -15px 0 9px;
     padding-top: 10px;
     list-style-type: none;
+}
+
+.reviews__list + .pagination .pagination__list {
+    margin-right: 80px;
 }
 
 .reviews__item {
     display: flex;
     align-items: flex-start;
-    padding: 25px 0;
+    padding: 21px 0;
+}
+
+.reviews__item:first-child {
+    padding-top: 10px;
 }
 
 .reviews__item:not(:last-child) {
@@ -27,10 +36,11 @@
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    width: 160px;
-    height: 160px;
-    margin-right: 20px;
-    border-radius: 80px;
+    width: 170px;
+    height: 170px;
+    margin-top: 6px;
+    margin-right: 25px;
+    border-radius: 50%;
     background-image: url('../img/background/circle.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -38,7 +48,7 @@
 }
 
 .reviews__media img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .reviews__desc {

@@ -4,6 +4,7 @@
 }
 
 .contacts__phone {
+    display: block;
     color: inherit;
     text-decoration: none;
     font-size: 21px;
@@ -12,6 +13,16 @@
 
 .contacts__schedule {
     position: relative;
+    display: inline-block;
+}
+
+.contacts__schedule:hover .contacts__schedule-panel {
+    right: 0;
+    opacity: 1;
+} 
+
+.contacts__schedule:hover .contacts__schedule-button {
+    opacity: 1;
 }
 
 .contacts__schedule-button {
@@ -28,15 +39,13 @@
     cursor: pointer;
 }
 
-.contacts__schedule-button:hover {
-    opacity: 1;
-}
 
 .contacts__schedule-panel {
-    display: none;
+    display: block;
     position: absolute;
     top: calc(100% + 5px);
-    right: 0;
+    right: 100vw;
+    opacity: 0;
     z-index: 1;
     padding: 15px 20px;
     border-radius: 3px;
@@ -45,6 +54,7 @@
     text-align: left;
     background: #fff;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .2);
+    transition: opacity .3s;
 }
 
 .contacts__schedule-panel::before {
@@ -56,9 +66,14 @@
     border-bottom: 12px solid #fff;
 }
 
-.contacts__schedule-button:hover + .contacts__schedule-panel {
-    display: block;
-} 
+.contacts__schedule-panel::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 100%;
+    height: 21px;
+}
 
 .contacts__schedule-line {
     margin: 0;

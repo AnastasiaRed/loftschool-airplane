@@ -1,13 +1,15 @@
 .breaker {
-    margin-bottom: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 11px;
+    margin-bottom: 21px;
+    padding: 25px 14px;
     color: #fff;
-    background-color: #4bb56b;
-    background-image: url('../img/background/pattern.png');
+    background-color: #4b73b5;
+    background-image: url(../img/background/pattern.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 1.7;
+    text-align: center;
 }
 
 .breaker a {

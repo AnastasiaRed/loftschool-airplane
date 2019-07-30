@@ -1,0 +1,76 @@
+.btn {
+    position: relative;
+    padding: 15px 48px 15px 19px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .3s, color .3s;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 14px;
+    right: 20px;
+    top: calc(50% - 7px);
+    position: absolute;
+    background-image: url('../img/icons/sprite.png');
+    background-repeat: no-repeat;
+} 
+
+.btn::after {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.btn:hover::after {
+    opacity: 1;
+}
+
+.btn--primary {
+    border: 1px solid #4b73b5;
+    color: #4b73b5;
+    background-color: transparent;
+}
+
+.btn--primary::before {
+    background-size: 129px auto;
+    background-position: -80px -8px;
+}
+
+.btn--primary::after {
+    background-position: -10px -86px;
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+    color: #fff;
+    background-color: #4b73b5;
+}
+
+.btn--secondary {
+    color: #fff;
+    background-color: #4b73b5;
+}
+
+.btn--secondary::before {
+    background-position: -10px -86px;
+}
+
+.btn--secondary::after {
+    background-size: 129px auto;
+    background-position: -80px -8px;
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus {
+    background-color: #fff;
+    color: #4b73b5; 
+}

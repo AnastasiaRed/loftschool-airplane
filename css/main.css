@@ -5,6 +5,7 @@
 @import './banner.css';
 @import './breadcrumbs.css';
 @import './breaker.css';
+@import './btn.css';
 @import './contacts.css';
 @import './creator.css';
 @import './footer.css';
@@ -21,3 +22,4 @@
 @import './socials.css';
 @import './tariffs.css';
 @import './team.css';
+@import './welcome.css';
