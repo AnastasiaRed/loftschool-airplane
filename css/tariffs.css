@@ -1,23 +1,13 @@
-.tariffs {
-    margin-top: 9px;
-}
-
-.tariffs__list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0; 
-}
-
-.tariffs__item {
+.tariff {
     display: flex;
     flex-grow: 1;
+    margin-top: 9px;
     border-radius: 3px;
     text-align: center;
     margin-bottom: 24px;
 }
 
-.tariffs__item-link {
+.tariff__link {
     flex-grow: 1;
     border: 1px solid #e8e9ed;
     padding: 20px 38px;
@@ -26,41 +16,39 @@
     transition: background-color .3s;
 }
 
-.tariffs__item-link:hover {
+.tariff__link:hover {
     background-color: #e8e9ed;
 } 
 
-.tariffs__item-label {
-    margin: 0 0 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+.tariff__label {
+    margin-bottom: 20px;
 }
 
-.tariffs__item-title {
+.tariff__title {
     margin: 0 0 17px;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.tariffs__item-desc {
+.tariff__desc {
     margin: 0px 0 7px;
     text-align: left;
 }
 
-.tariffs__item-includes {
+.tariff__includes {
     margin: 0;
     text-align: left;
     list-style-type: none;
 }
 
-.tariffs__item-includes > li {
+.tariff__includes > li {
     position: relative;
     margin-bottom: 5px;
     padding-left: 25px;
 }
 
-.tariffs__item-includes > li::before {
+.tariff__includes > li::before {
     position: absolute;
     top: 5px;
     left: -2px;
@@ -68,12 +56,12 @@
     font-size: 10px;
 }
 
-.tariffs__item-price {
+.tariff__price {
     margin: 0;
     font-size: 54px;
     line-height: 1.45;
 }
 
-.tariffs__item-price > small {
+.tariff__price > small {
     font-size: 30px;
 }

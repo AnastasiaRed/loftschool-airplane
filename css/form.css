@@ -72,6 +72,12 @@ textarea.form__control {
     padding-left: 30px;
 }
 
+.form__radio:focus + .form__label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+}
+
 .form__radio + .form__label::before {
     content: '';
     display: block;
@@ -149,6 +155,7 @@ textarea.form__control {
     color: #4b73b5; 
 }
 
-.form__submit:hover::after {
+.form__submit:hover::after,
+.form__submit:focus::after {
     opacity: 1;
 }

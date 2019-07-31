@@ -29,6 +29,10 @@
     transition: color .3s;
 }
 
+.menu__link:visited {
+    color: #4b73b5;  
+}
+
 .menu__link::before,
 .menu__link::after {
     content: '';
@@ -47,7 +51,7 @@
     transition: opacity .3s;
 }
 
-.menu__link:not(:link), 
+.menu__link:not([href]), 
 .menu__link:hover {
     color: #221f1f;
 }
